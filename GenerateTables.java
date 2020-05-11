@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.*;
 import java.io.*;
 import javafx.application.Application;
-
+// Meriselle Ruotolo
 import java.util.*;
 
 public class GenerateTables {
@@ -303,7 +303,7 @@ public class GenerateTables {
             }
             int genderCount = row.getInt("count(gender)");
             int avgBirthYear = row.getInt("avg(birthyear)");
-            int freqDay = row.getInt("count(startDay)");
+            int freqDay = row.getInt("count(startDay)"); // Meriselle Ruotolo
             System.out.println("Day of Week: " + startDay + " Gender: " + gender + " Frequency of Gender: " + genderCount + " Average Birth Year of Riders: " + avgBirthYear + " Amount of Riders This Day: " + freqDay);
         }
         row.close();
@@ -320,3 +320,6 @@ public class GenerateTables {
         row.close();
     }
 }
+
+
+// Meriselle Ruotolo
