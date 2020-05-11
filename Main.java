@@ -15,6 +15,7 @@ import java.lang.Object.*;
 import java.text.SimpleDateFormat;
 import java.text.DateFormat;
 import java.util.Date;
+// Meriselle Ruotolo
 
 
 public class Main{
@@ -31,26 +32,26 @@ public class Main{
             //stmt.execute(); 
 
             System.out.println("Making database.");
-            //GenerateTables.createTables(conn);
+            GenerateTables.createTables(conn);
             System.out.println("Database made.");
 
-            //ReadData.LoadData(conn);
+            ReadData.LoadData(conn);
             System.out.println("Base Table Generated.");
 
             // STATION INPUT;
-            //GenerateTables.stationInput(conn);
+            GenerateTables.stationInput(conn);
             System.out.println("Station Table Filled.");
 
-            //GenerateTables.UsageByAgeInput(conn);
+            GenerateTables.UsageByAgeInput(conn);
             System.out.println("UsageByAge Table Filled.");
 
-            //GenerateTables.UsageByGenderInput(conn);
+            GenerateTables.UsageByGenderInput(conn);
             System.out.println("Gender Table Filled.");
 
-            //GenerateTables.tripInput(conn);
+            GenerateTables.tripInput(conn);
             System.out.println("Trip Table Filled.");
 
-            //GenerateTables.dayInput(conn);
+            GenerateTables.dayInput(conn);
             System.out.println("Usage By Day Table Filled.");
             GenerateTables.usagePatterns(conn, 2022);
             String day = "Saturday";
@@ -62,4 +63,5 @@ public class Main{
             System.out.println("Exception caught here: " + e);
         }
     }
+    // Meriselle Ruotolo
 }
